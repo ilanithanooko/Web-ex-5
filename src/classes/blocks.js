@@ -43,6 +43,6 @@ export class ImageBlock extends Block{ //inherits from class block
         super('image',data) //constructor of block
     }
     toHTML(){ // 
-        return row(col(`<img src="${this.data}">`))
+        return row(col(`<img class="img-fluid" src="${this.data}"/>`))
     }
 }
